@@ -104,8 +104,16 @@ public class ZeroGMovement : MonoBehaviour
             rb.AddForce(MainCam.transform.up * verticalGlide * Time.fixedDeltaTime);
             verticalGlide *= upDownGlideReduction;
         }
+        
+    }
 
+    public void Pull(Vector3 targetPosition, float pullForce)
+    {
+        Vector3 direction = targetPosition - transform.position;
 
+        direction.Normalize();
+
+        GetComponent<Rigidbody>().AddForce(direction * pullForce, ForceMode.Force);
     }
 
     #region input values

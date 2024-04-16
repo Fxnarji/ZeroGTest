@@ -49,15 +49,6 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
-                },
-                {
-                    "name": "PrimaryFire",
-                    "type": "Button",
-                    "id": "783a54d0-a19d-43dd-8cc2-885a74ad1ce4",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -203,17 +194,6 @@
                     "action": "PitchYaw",
                     "isComposite": false,
                     "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "83bacba2-bf61-4b67-8a95-6da914b39eff",
-                    "path": "<Mouse>/leftButton",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "PrimaryFire",
-                    "isComposite": false,
-                    "isPartOfComposite": false
                 }
             ]
         },
@@ -262,6 +242,15 @@
                     "type": "PassThrough",
                     "id": "5c8fb9cf-e78a-4d0e-9480-a6da244b7f0c",
                     "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "PrimaryFire",
+                    "type": "Button",
+                    "id": "327105a0-b64a-4475-aa2d-50436209a14e",
+                    "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -408,6 +397,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "LookMovement",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e5575567-c8be-467b-a294-aa8718e5412b",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PrimaryFire",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
