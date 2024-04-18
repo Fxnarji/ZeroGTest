@@ -11,6 +11,7 @@ public class Grappling : MonoBehaviour
     public GameObject objectToSpawn;
     public GameObject Player;
     public float maxDistance = 10f;
+    public float force = 2000f;
     private bool isPulling = false;
 
     private ZeroGMovement playerMovement;
@@ -35,7 +36,7 @@ public class Grappling : MonoBehaviour
                 Debug.Log("Ray HIT");
                 // Spawn object at hit point
                 Instantiate(objectToSpawn, hit.point, Quaternion.identity);
-                playerMovement.Pull(hit.point, 2000);
+                playerMovement.Pull(hit.point, force);
             }
         }
     }

@@ -56,7 +56,8 @@ public class ZeroGMovement : MonoBehaviour
     {
 
         // Calculate Pitch
-        rb.AddTorque(MainCam.transform.right * -pitchYaw.y * pitchTorque * Time.fixedDeltaTime);
+        if(pitchYaw.y >= 0.8 || pitchYaw.y <= -0.8)
+            rb.AddTorque(MainCam.transform.right * -pitchYaw.y * pitchTorque * Time.fixedDeltaTime);
 
         // Calculate Yaw
         rb.AddTorque(MainCam.transform.up * pitchYaw.x * pitchTorque * Time.fixedDeltaTime);
